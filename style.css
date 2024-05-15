@@ -1,0 +1,141 @@
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(73, 173, 140);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(60, 119, 99);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.box4{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(46, 63, 58);
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.box_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.green{
+    height: 200px;
+    width: 300px;
+    background-color: green;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+}
+
+
+.teacher{
+    height: 300px;
+    width: 600px;
+    background-color: rgb(35, 32, 197);
+    position: relative;
+    /* assign as a parent */
+
+}
+
+.student{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(146, 147, 168);
+    position: absolute;  
+    /* assign as a child */
+   
+    right: 0;
+    bottom: 0;
+}
+
+/* absolute is a child */
+
+/* relative is a parent  */
+
+.menu{
+    background-color: burlywood;
+    text-align: center;
+}
+
+.un,ul{
+
+    list-style: none;
+}
+
+a{
+
+    text-decoration: none;
+
+}
+.menu ul{
+    display: inline-flex;  
+    /* center thaka obsthay flex korte caile inline-flex */
+}
+.menu ul li{
+    height: 50px;
+    width: 100px;
+    line-height: 50px;
+    position: relative;
+}
+
+
+.menu ul li:hover{
+    background-color: blueviolet;
+}
+.menu ul li a:hover{
+    color: brown;
+    font-weight: bold;
+}
+
+.drop{
+    display: none;
+
+}
+
+.menu ul li:hover .drop{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+ 
+}
+
+.menu ul li:hover .drop ul{
+    display: block;
+    background-color: rgb(131, 86, 86);
+    
+}
+
+
